@@ -1,0 +1,18 @@
+import random
+
+
+def create_shares():
+    # creates a list of shares of random length and random contents
+    share_list = []
+    len_shares = random.randint(1, 100)
+    i = 0
+    print(f'share has length {len_shares}')
+
+    while i < len_shares:
+        share_list.append(random.randint(1, 15))
+        i = i + 1
+
+    return share_list
+
+
+print(create_shares())
